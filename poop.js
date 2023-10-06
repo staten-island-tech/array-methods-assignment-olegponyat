@@ -1,26 +1,20 @@
-const date = new Date();
-let year = date.getFullYear();
 const Fart = [
-{
-    firstName: 'gabe',
-    lastName: 'liberov',
-    DOB: 1999,
-    graduated: false,
-    age: function poopy() {
-        return year - this.DOB;
+    {
+        firstName: 'gabe',
+        lastName: 'liberov',
+        numbers: [1,2,3,4,5]
     },
-    siblings: []
-},{
-    firstName: 'jake',
-    lastName: 'stroming',
-    DOB: 1999,
-    graduated: false,
-    age: function poopy() {
-        return year - this.DOB;
-    },
-    siblings: []
-}
-];
-Fart.forEach(name) => {
-    console.log(Fart.firstName)
-}
+    {
+        firstName: 'jake',
+        lastName: 'stroming',
+        numbers: [6,7,8,9,10]
+    }
+]
+Fart.forEach((names) => {
+    console.log(names.firstName, names.lastName)
+});
+Fart.forEach((number) => {
+    console.log(number.numbers )
+});
+
+
