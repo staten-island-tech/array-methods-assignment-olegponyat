@@ -50,3 +50,5 @@ const graduates = students.filter((student) => student.graduated === false)
 /* students.forEach((name) => {
     console.log(name.firstName, name.lastName)
 }); */
+
+// REMEMBER TO SIGN OUT DOOFUS
