@@ -2,53 +2,84 @@ const students = [
     {
         firstName: 'jane',
         lastName: 'laduca',
-        graduated: false,
-        siblings: ['cait'],
-        age: function () {
-            return year - this.DOB;
-        }
+        DOB: 2008,
+        crippled: false,
+        siblings: [1,2,3,4],
     },
     {
         firstName: 'jake',
         lastName: 'stroming',
-        graduated: false,
-        siblings: [null],
-        age: function () {
-            return year - this.DOB;
-        }
+        DOB: 2008,
+        crippled: false,
+        siblings: [5,6,7,8],
     },
     {
         firstName: 'gabe',
         lastName: 'liberov',
-        graduated: false,
-        siblings: [],
-        age: function () {
-            return year - this.DOB;
-        }
+        DOB: 2008,
+        crippled: true,
+        siblings: [9,10,11,12],
     },
     {
         firstName: 'rylan',
         lastName: 'geykhman',
-        graduated: false,
-        siblings: ['one', 'two', 'three'],
-        age: function () {
-            return year - this.DOB;
-        }
+        DOB: 2008,
+        crippled: false,
+        siblings: [13,14,15,16],
+    },
+    {
+        firstName: 'yan',
+        lastName: 'sharma',
+        DOB: 2008,
+        crippled: false,
+        siblings: [17,18,19,20],
+    },
+    {
+        firstName: 'michael',
+        lastName: 'fried',
+        DOB: 2008,
+        crippled: false,
+        siblings: [21,22,23,24],
+    },
+    {
+        firstName: 'veronica',
+        lastName: 'fried',
+        DOB: 2008,
+        crippled: true,
+        siblings: [25,26,27,28],
     },
     {
         firstName: 'sam',
         lastName: 'francos',
-        graduated: false,
-        siblings: ['alina'],
-        age: function () {
-            return year - this.DOB;
-        }
-    }   
+        DOB: 2008,
+        crippled: true,
+        siblings: [29,30,31,32],
+    },
+    {
+        firstName: 'erik',
+        lastName: 'schou',
+        DOB: 2008,
+        crippled: true,
+        siblings: [33,34,35,36],
+    },
+    {
+        firstName: 'mistor',
+        lastName: 'whalen',
+        DOB: 2008,
+        crippled: false,
+        siblings: [37,38,39,40],
+    }
+    
 ]
 
-const graduates = students.filter((student) => student.graduated === false)
-/* students.forEach((name) => {
-    console.log(name.firstName, name.lastName)
-}); */
+students.forEach((fullNames)=> {
+    console.log(fullNames.firstName, fullNames.lastName);
+});
+students.forEach((numArr) => {
+    numArr.siblings.forEach((numeros)=> {
+        console.log(numeros)
+    })
+});
+const cripples = students.filter((fart)=> {return fart.crippled === false})
+console.log(cripples)
 
-// REMEMBER TO SIGN OUT DOOFUS
