@@ -80,6 +80,7 @@ students.forEach((numArr) => {
         console.log(numeros)
     })
 });
-const cripples = students.filter((fart)=> {return fart.crippled === false})
+console.log('this array is for CRIPPLES')
+const cripples = students.filter((fart)=> {return fart.crippled === true})
 console.log(cripples)
 
