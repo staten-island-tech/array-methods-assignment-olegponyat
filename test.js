@@ -1,85 +1,98 @@
 const students = [
     {
+        id: 1,
         firstName: 'jane',
         lastName: 'laduca',
         DOB: 2008,
         crippled: false,
-        siblings: [1,2,3,4],
+        siblings: ['cait laduca'],
     },
     {
+        id: 2,
         firstName: 'jake',
         lastName: 'stroming',
         DOB: 2008,
         crippled: false,
-        siblings: [5,6,7,8],
+        siblings: ['daniel livak'],
     },
     {
+        id: 3,
         firstName: 'gabe',
         lastName: 'liberov',
         DOB: 2008,
         crippled: true,
-        siblings: [9,10,11,12],
+        siblings: ['sister liberov, rylan geykhman'],
     },
     {
+        id: 4,
         firstName: 'rylan',
         lastName: 'geykhman',
         DOB: 2008,
         crippled: false,
-        siblings: [13,14,15,16],
+        siblings: ['ginger freshman, nicole solstov'],
     },
     {
+        id: 5,
         firstName: 'yan',
         lastName: 'sharma',
         DOB: 2008,
         crippled: false,
-        siblings: [17,18,19,20],
+        siblings: ['yas sharma, manish sharma, manoosh sharma'],
     },
     {
+        id: 6,
         firstName: 'michael',
         lastName: 'fried',
         DOB: 2008,
         crippled: false,
-        siblings: [21,22,23,24],
+        siblings: ['veronica fried,'],
     },
     {
+        id: 7,
         firstName: 'veronica',
         lastName: 'fried',
         DOB: 2008,
         crippled: true,
-        siblings: [25,26,27,28],
+        siblings: ['michael fried'],
     },
     {
+        id: 8,
         firstName: 'sam',
         lastName: 'francos',
         DOB: 2008,
         crippled: true,
-        siblings: [29,30,31,32],
+        siblings: ['Maria Teresa García Ramírez de Arroyo, alina francos'],
     },
     {
+        id: 9,
         firstName: 'erik',
         lastName: 'schou',
         DOB: 2008,
         crippled: true,
-        siblings: [33,34,35,36],
+        siblings: ['crutches'],
     },
     {
+        id: 10,
         firstName: 'mistor',
         lastName: 'whalen',
         DOB: 2008,
         crippled: false,
-        siblings: [37,38,39,40],
+        siblings: ['doctor fruski'],
     }
     
 ]
 
-students.forEach((fullNames)=> {
-    console.log(fullNames.firstName, fullNames.lastName);
-});
-students.forEach((numArr) => {
-    numArr.siblings.forEach((numeros)=> {
-        console.log(numeros)
+students.forEach((students)=> {
+    console.log('STUDENT NUMBER', students.id)  
+    console.log(students.firstName, students.lastName);
+    console.log('---------------');
+    console.log('SIBBYS')
+    students.siblings.forEach((sibbys)=> {
+        console.log(sibbys)
     })
+    console.log('---------------');
 });
+console.log('HERE ARE MY FAVORITE NON-CRIPPLES')
 const cripples = students.filter((fart)=> {return fart.crippled === false})
 console.log(cripples)
 
